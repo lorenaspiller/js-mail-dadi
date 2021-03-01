@@ -13,19 +13,13 @@ var computer = Math.floor(Math.random() * 6) + 1;
 // 2. stabilisco il vincitore in base al punteggio più alto
 
 if (giocatore > computer) {
-  console.log(giocatore);
   document.getElementById('vincitore').innerHTML = ("giocatore");
-  document.getElementById('numeroGiocatore').innerHTML = (giocatore);
-  document.getElementById('numeroComputer').innerHTML = (computer);
-
 } else if (giocatore == computer) {
   document.getElementById('vincitore').innerHTML = ("NESSUNO!");
-  document.getElementById('numeroGiocatore').innerHTML = (giocatore);
-  document.getElementById('numeroComputer').innerHTML = (computer);
-
 }
  else {
   document.getElementById('vincitore').innerHTML = ("computer");
-  document.getElementById('numeroGiocatore').innerHTML = (giocatore);
-  document.getElementById('numeroComputer').innerHTML = (computer);
 }
+
+document.getElementById('numeroGiocatore').innerHTML = (giocatore);
+document.getElementById('numeroComputer').innerHTML = (computer);
